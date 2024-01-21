@@ -13,7 +13,11 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("ハローワールド")
+            HStack{
+                Text("Placeholder")
+                Text("ハローワールド")
+                Text("Placeholder2")
+            }
         }
         .padding()
     }
