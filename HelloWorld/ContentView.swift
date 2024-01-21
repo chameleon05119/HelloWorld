@@ -10,19 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            HStack{
-                Text("Placeholder")
-                Text("ハローワールド")
-                Text("Placeholder2")
+            HStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.blue)
+                Text("Hello World!")
+            }
+            HStack {
+                Image(systemName: "sunrise")
+                    .imageScale(.large)
+                    .foregroundColor(.red)
+                Text("おはよう！")
             }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View{
+        ContentView()
+    }
 }
