@@ -10,18 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            HStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.blue)
-                Text("Hello World!")
-            }
-            HStack {
-                Image(systemName: "sunrise")
-                    .imageScale(.large)
-                    .foregroundColor(.red)
-                Text("おはよう！")
-            }
+            Text("No.").bold() + Text("123").font(.largeTitle)
         }
     }
 }
