@@ -9,15 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            Image("test")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .scaleEffect(1.8)
-                .offset(x: 70, y: -20)
-                .frame(width: 300, height: 500)
-                .clipped()
-            Text("Hello World!").padding()
+        VStack(spacing:10){
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 200, height: 100)
+                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.green, .yellow, .red]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 200, height: 100)
+                .padding(50)
+                .foregroundStyle(Color.blue.gradient.shadow(.drop(radius: 30)))
+            Text("gradient")
+                .font(.system(size: 70))
+                .bold()
+                .foregroundStyle(Color.yellow.gradient.shadow(.inner(radius: 5)))
         }
     }
 }
